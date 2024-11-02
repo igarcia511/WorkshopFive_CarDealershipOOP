@@ -241,7 +241,7 @@ public class UserInterface {
         // calculate pricing
         int buyOption;
         List<Vehicle> vehiclesToRemove = new ArrayList<>();
-        System.out.println("Enter 1) to buy a vehicle, 2) to lease a vehicle");
+        System.out.println("Enter 1) to buy a vehicle, 2) to lease a vehicle: ");
         buyOption = inputScanner.nextInt();
         inputScanner.nextLine();
 
@@ -253,7 +253,7 @@ public class UserInterface {
             String name = inputScanner.nextLine();
             System.out.print("Enter email: ");
             String email = inputScanner.nextLine();
-            System.out.print("Do you want to finance? 1) for yes 2) for no");
+            System.out.print("Do you want to finance? 1) for yes 2) for no: ");
             int financeOrNo = inputScanner.nextInt();
             inputScanner.nextLine();
             boolean financeDecision;
@@ -297,7 +297,7 @@ public class UserInterface {
                    displayVehicles(vehicle);
                }
             }
-            System.out.println("Enter the vin of the year you want to buy");
+            System.out.println("Enter the vin of the vehicle you want to lease:");
            int vehicleNumber = inputScanner.nextInt();
 
            for(Vehicle vehicle : dealership.getAllVehicles()){

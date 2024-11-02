@@ -23,7 +23,6 @@ public class LeaseContract extends Contract {
     @Override
     public double getMonthlyPayment(){
         int totalMonths = 36;
-        // first part is off by 30 bucks not sure why, tried everything.
         double powValue = Math.pow((1 + 0.00333333), -totalMonths);
         System.out.println(1+ 0.00333333 );
         System.out.println(powValue);

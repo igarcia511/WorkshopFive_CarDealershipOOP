@@ -291,7 +291,7 @@ public class UserInterface {
             String email = inputScanner.nextLine();
            for (Vehicle vehicle : dealership.getAllVehicles()) {
                LocalDate currentDate = LocalDate.now();
-               LocalDate dateMinusThreeYears = currentDate.minusYears(4);
+               LocalDate dateMinusThreeYears = currentDate.minusYears(3);
                int yearMinusThree = dateMinusThreeYears.getYear();
                if(vehicle.getYear() > yearMinusThree){
                    displayVehicles(vehicle);
